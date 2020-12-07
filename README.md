@@ -5,8 +5,9 @@ This tutorial will show you a very brief introduction the programming language C
 C is what’s called a low-level language and more machine oriented, so it’s easier for a machine to read but harder for a human to understand. It is put through a compiler and then an executor and the output does not have to go through an IDE. 
 
 
-When using POP
-easy to add new classes without changing functions that already exist (high level).
+When using POP 
+
+it is easy to add new classes without changing functions that already exist (high level).
 Method to structure a program by grouping behaviours into objects in order to solve problems
 
 Use modular units that are blocks of code that can easily be changed or added without disrupting the operation
