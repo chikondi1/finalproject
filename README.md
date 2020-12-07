@@ -58,7 +58,9 @@ class Temperature:
 ```
 In order to code this same code in C, we need to define the 
 
+if 
 
 
+As you can see, there is not much of a difference, however this can be used in certain GIS softwares. 
 
-As you can see, there is not much of a difference, however 
+Happy coding!!
