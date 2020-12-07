@@ -29,13 +29,21 @@ C is not used in GIS the same way we use Python, as C is more commonly used to c
 
 
 ### Let's Code! ###
-Now that we have some background knowledge on C, let's code in Python and also C! We will be using a lab that is taken from IDCE 302: Python Programming. We will be creating a code that shows temperature suitability mapping for 
+Now that we have some background knowledge on C, let's code in Python and also C! We will be using a lab that is taken from IDCE 302: Python Programming. We will be creating a code that shows temperature suitability mapping for chameleons. 
 When coding in C, you are able to use Python, Google Colab, Jupyter Notebooks or anything that can read Python. In order to write in C, I used CLion, which is an IDE for writing code in C, however you may use something else such as Visual Studio or Eclipse.
+
+We will write code that shows areas that haveTo begin, let's create our class and our object (used in OOP).
+
+```
+class Temperature: 
+  def globalTemp(x):
+```
+Our class is temperature and our object is 
 
 ```
 #This function classifies which numerical temperature will go into which category.
 class Temperature: 
-  def feelTemp(x):
+  def globalTemp(x):
     if x >= 100:
       print("It is hot")
     elif x >= 70 and x < 100:
@@ -48,4 +56,9 @@ class Temperature:
 #I added "int" to the beginning so that the program knows it is an integer as opposed to a string. 
   feelTemp(x = int(input('Enter temperature: ')))
 ```
+In order to code this same code in C, we need to define the 
 
+
+
+
+As you can see, there is not much of a difference, however 
