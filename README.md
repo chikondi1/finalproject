@@ -30,8 +30,9 @@ C is not used in GIS the same way we use Python, as C is more commonly used to c
 
 ### Let's Code! ###
 Now that we have some background knowledge on C, let's code in Python and also C! We will be using a lab that is taken from IDCE 302: Python Programming. We will be creating a code that shows temperature suitability mapping for 
-When coding in C, you are able to use Python, Google Colab, Jupyter Notebooks or anything that can read C.
+When coding in C, you are able to use Python, Google Colab, Jupyter Notebooks or anything that can read Python. In order to write in C, I used CLion, which is an IDE for writing code in C, however you may use something else such as Visual Studio or Eclipse.
 
+'''
 #This function classifies which numerical temperature will go into which category.
 class Temperature: 
   def feelTemp(x):
@@ -47,5 +48,5 @@ class Temperature:
 #I added "int" to the beginning so that the program knows it is an integer as opposed to a string. 
   feelTemp(x = int(input('Enter temperature: ')))
 
-
+'''
 
