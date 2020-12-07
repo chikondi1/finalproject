@@ -32,13 +32,13 @@ C is not used in GIS the same way we use Python, as C is more commonly used to c
 Now that we have some background knowledge on C, let's code in Python and also C! We will be using a lab that is taken from IDCE 302: Python Programming. We will be creating a code that shows temperature suitability mapping for chameleons. 
 When coding in C, you are able to use Python, Google Colab, Jupyter Notebooks or anything that can read Python. In order to write in C, I used CLion, which is an IDE for writing code in C, however you may use something else such as Visual Studio or Eclipse.
 
-We will write code that shows areas that haveTo begin, let's create our class and our object (used in OOP).
+We will write code that looks at temperature in different areas. This will be helpful when assessing the climate when a temperature is input to the code.  To begin, let's create our class and our object (used in OOP).
 
 ```
 class Temperature: 
   def globalTemp(x):
 ```
-Our class is temperature and our object is 
+Our class is temperature and our object is global Temp. Next we will set our parameters for the temperature.
 
 ```
 #This function classifies which numerical temperature will go into which category.
@@ -56,11 +56,36 @@ class Temperature:
 #I added "int" to the beginning so that the program knows it is an integer as opposed to a string. 
   feelTemp(x = int(input('Enter temperature: ')))
 ```
-In order to code this same code in C, we need to define the 
 
-if 
+Now to let's create the same code using C:
 
+```
+#include<stdio.h>
+int main()
+{
+  int x;
+  printf("Enter x:");
+  scanf("%d", x);
+  if(x=<100)	
+  {		
+   printf(“It is hot");	
+  }	
+  if(x>=70 && x<100)
+  {		
+   printf(“It is warm");	
+  }	
+  if (x>=32 && x <70);
+  {
+   printf(“x “It is cool.);
+  }
+   if(x<32)	
+  {		
+   printf(“x “It is cold.);	
+  }	
+  getch();
+}
 
-As you can see, there is not much of a difference, however this can be used in certain GIS softwares. 
+```
+Can you spot similarities and differences between the Python code and C? What are they? What does each line of code do?
 
 Happy coding!!
