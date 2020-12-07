@@ -15,9 +15,7 @@ Here are some key facts about each one:
   * Inheritance - Eliminates redundant code.
   * Polymorphic - the code can change but the algorithm stays the same. 
 
-
-
-### Proceduarl Oriented Programming (POP) ###
+### Procedural Oriented Programming (POP) ###
 * Data is exposed and can be easily modified, not abstracted
 * Uses classes and objects, however not in the same way that OOP does
 * Easy to add new functions without changing the data structure
@@ -26,22 +24,28 @@ Here are some key facts about each one:
 Many coding languages such as Python, Java, Ruby and C++ use OOP as they are very user friendly. With Python, the code is written, run in the interpreter and an output is given using an IDE so that machines can understand it. Python is a high-level language and is very person oriented, meaning that it’s easy for humans to intuitively understand and interpret. C is what’s called a low-level language and more machine oriented, so it’s easier for a machine to read but harder for a human to understand. It is put through a compiler and then an executor and the output does not have to go through an IDE. 
 
 
-Use modular units that are blocks of code that can easily be changed or added without disrupting the operation
+### Uses in GIS ###
+C is not used in GIS the same way we use Python, as C is more commonly used to code hardware devices and heavyweight development. It is not often used for scripting, data processing, analysis & modeling, web mapping, as we do with Python. This means that C is used to code processing system and geospatial libraries such as the Geospatial Data Abstraction Library (GDAL), or the German database for spatial data Einheitliche Datenbankschnittstelle (EDBS). There are some open source GIS projects written in C (also uses C++ and Python) such as the  that reads raster and vector data, for example GRASS GIS (Geographic Resources Analysis Support System).
 
 
-C is not used in GIS the same way we use Python, as C is more commonly used to code hardware devices and heavyweight development. This means that it is used to code processing system and geospatial libraries such as the Geospatial Data Abstraction Library (GDAL), 
+### Let's Code! ###
+Now that we have some background knowledge on C, let's code in Python and also C! We will be using a lab that is taken from IDCE 302: Python Programming. We will be creating a code that shows temperature suitability mapping for 
+When coding in C, you are able to use Python, Google Colab, Jupyter Notebooks or anything that can read C.
 
-There’s not really a consensus on the best programming languages for GIS
+#This function classifies which numerical temperature will go into which category.
+class Temperature: 
+  def feelTemp(x):
+    if x >= 100:
+      print("It is hot")
+    elif x >= 70 and x < 100:
+      print("It is warm")
+    elif x >= 32 and x < 70:
+      print("It is cool")
+    elif x < 32:
+      print("It is cold")
 
-but python is used for more scripting and data processing, analysis & modeling, web mapping. 
-
-Java, C, C++ are statically typed and show you errors during compilation time, and Python, JavaScript show errors when you run it, they are dynamic typing languages. As we saw with ArcGIS and Python, we often didn’t know the error until after running but with C, it’s not like that 
-
-However there a lot of open source GIS projects written in C (also uses C++ and Python) such as the  that reads raster and vector data. A lot of GIS software uses GDAL such as ArcGIS, ENVI which is a remote sensing software, Google Earth, GRASS GIS (Geographic Resources Analysis Support System), QGIS, R 
-
-Knowing C is important as it is the base of many other coding languages, however tools that are used more commonly by GIS specialists include Java, JavaScript, C++, C#, R, HTML, SQL.
-
-Now that we have some background knowledge on C, let's code in Python and also C! We will be using a lab that is taken from IDCE 302: Python Programming. 
+#I added "int" to the beginning so that the program knows it is an integer as opposed to a string. 
+  feelTemp(x = int(input('Enter temperature: ')))
 
 
 
