@@ -88,4 +88,4 @@ int main()
 ```
 Can you spot similarities and differences between the Python code and C? What are they? What does each line of code do?
 
-Happy coding!!
+Happy coding!
