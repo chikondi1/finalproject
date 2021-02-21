@@ -1,5 +1,7 @@
 # Coding With C
 
+*This is a tutorial I made for my final project in my Computer Programming with GIS course (Fall 2020)*
+
 This tutorial will show you a very brief introduction the programming language C and approaches to using it in GIS work. Throughout our class we have mostly used Python and Java, which have many similarities, however C operates slightly differently. You may have heard of C++, and C#, which are both derived from C, however they are different languages and work differently. In order to understand how C works, we first need to understand the difference between object oriented programming (OOP) and procedural oriented programming (POP). These are two different approaches to writing code and therefore exist in different programming languages. 
 
 Here are some key facts about each one:
